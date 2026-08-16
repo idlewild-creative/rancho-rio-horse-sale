@@ -78,6 +78,7 @@ h1, h2, h3, h4 {
 .eyebrow.on-dark { color: var(--red); }
 
 p { margin: 0 0 1em; max-width: 62ch; }
+li::marker { color: var(--red); }
 
 .lede {
   font-size: 1.2rem;
