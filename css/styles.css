@@ -146,6 +146,7 @@ li::marker { color: var(--red); }
 .brand-mark { height: 48px; width: auto; flex-shrink: 0; }
 
 .main-nav { display: flex; align-items: center; gap: var(--space-4); }
+.main-nav .btn { padding-left: 2em; padding-right: 2em; }
 .main-nav ul { list-style: none; display: flex; gap: var(--space-3); margin: 0; padding: 0; }
 .main-nav a {
   font-family: var(--font-label);
