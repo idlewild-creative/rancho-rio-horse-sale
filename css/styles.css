@@ -465,17 +465,18 @@ section { padding: var(--space-5) 0; }
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: thin;
-  scrollbar-color: var(--red) var(--ink-soft);
+  scrollbar-color: var(--red) var(--bone-dim);
   padding-bottom: var(--space-2);
 }
 .sliding-gallery-item {
   flex: 0 0 auto;
-  width: min(560px, 82vw);
+  width: min(420px, 74vw);
   aspect-ratio: 4 / 3;
   overflow: hidden;
-  background: var(--ink-soft);
+  background: var(--bone-dim);
   scroll-snap-align: start;
 }
+.sliding-gallery-item-tall { aspect-ratio: 3 / 4; }
 .sliding-gallery-item img {
   width: 100%;
   height: 100%;
