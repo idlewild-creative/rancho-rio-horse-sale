@@ -489,14 +489,14 @@ section { padding: var(--space-5) 0; }
 .sold-stamp {
   position: absolute;
   top: 14px;
-  right: -32px;
+  right: 14px;
   background: var(--red);
   color: var(--bone);
   font-family: var(--font-label);
   font-weight: 700;
   letter-spacing: 0.14em;
   font-size: 0.78rem;
-  padding: 0.35em 2.4em;
+  padding: 0.35em 1.1em;
   transform: rotate(8deg);
   box-shadow: 0 3px 8px rgba(0,0,0,0.25);
 }
