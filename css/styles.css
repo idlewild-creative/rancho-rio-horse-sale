@@ -411,6 +411,122 @@ section { padding: var(--space-5) 0; }
   .photo-mosaic { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
 }
 
+/* ---------- Growth chart (cumulative sale total) ---------- */
+
+.growth-chart { margin: var(--space-4) 0 var(--space-3); }
+.growth-chart-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+.growth-chart-label {
+  font-family: var(--font-label);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  color: var(--rust);
+  display: block;
+  margin-bottom: 0.3em;
+}
+.growth-chart-total {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  color: var(--red);
+  line-height: 1;
+}
+.growth-chart-note {
+  font-family: var(--font-label);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: rgba(11, 11, 12, 0.45);
+  max-width: 26ch;
+  text-align: right;
+}
+.growth-chart-svg-wrap { position: relative; }
+.growth-chart-svg-wrap svg { display: block; width: 100%; height: auto; overflow: visible; }
+.growth-chart-grid { stroke: var(--line-dark); stroke-width: 1; }
+.growth-chart-area { fill: rgba(200, 16, 46, 0.1); transform-origin: bottom; transform: scaleY(0); transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1); }
+.growth-chart-line {
+  fill: none;
+  stroke: var(--red);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.growth-chart-dot { fill: var(--red); stroke: var(--bone); stroke-width: 2; opacity: 0; transition: opacity 0.3s ease 0.9s; }
+.growth-chart.is-visible .growth-chart-area { transform: scaleY(1); }
+.growth-chart.is-visible .growth-chart-dot { opacity: 1; }
+.growth-chart-axis text {
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  fill: var(--rust);
+  text-transform: uppercase;
+}
+.growth-chart-axis .y-tick { fill: rgba(11, 11, 12, 0.45); }
+.growth-chart-endlabel {
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 12px;
+  fill: var(--ink);
+}
+.growth-chart-crosshair {
+  position: absolute;
+  top: 0;
+  bottom: 26px;
+  width: 1px;
+  background: var(--line-dark);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+.growth-chart-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: var(--ink);
+  color: var(--bone);
+  padding: 0.55em 0.8em;
+  font-family: var(--font-label);
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  transform: translate(-50%, -100%);
+  z-index: 3;
+}
+.growth-chart-tooltip strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--bone);
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.growth-chart-tooltip span { display: block; margin-top: 0.15em; opacity: 0.8; }
+.growth-chart-table { margin-top: var(--space-2); }
+.growth-chart-table summary {
+  cursor: pointer;
+  font-family: var(--font-label);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+  color: var(--rust);
+  padding: 0.4em 0;
+}
+.growth-chart-table table { margin-top: var(--space-2); }
+
+@media (max-width: 700px) {
+  .growth-chart-head { flex-direction: column; align-items: flex-start; }
+  .growth-chart-note { text-align: left; }
+}
+
 /* ---------- Results table ---------- */
 
 .results-table { width: 100%; border-collapse: collapse; }

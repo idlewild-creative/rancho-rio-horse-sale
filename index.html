@@ -70,6 +70,51 @@
       </div>
       <p class="lede" style="max-width:38ch;">Since 2015 The Horse Sale at Rancho Rio has set the bar, supporting the rise of the modern-day rope horse business along the way.</p>
     </div>
+
+    <div class="growth-chart" id="growthChart">
+      <div class="growth-chart-head">
+        <div>
+          <span class="growth-chart-label">Cumulative Sale Total &middot; 2015&ndash;2026</span>
+          <span class="growth-chart-total" id="growthTotal">$0</span>
+        </div>
+        <span class="growth-chart-note">Figures for 2015&ndash;2019 and 2025&ndash;2026 are estimates pending final verification.</span>
+      </div>
+      <div class="growth-chart-svg-wrap">
+        <svg id="growthSvg" viewBox="0 0 1000 340" role="img" aria-label="Line chart showing the cumulative sale total climbing from 2015 to 2026">
+          <g class="growth-chart-grid" id="growthGrid"></g>
+          <path class="growth-chart-area" id="growthArea"></path>
+          <path class="growth-chart-line" id="growthLine"></path>
+          <circle class="growth-chart-dot" id="growthDot" r="5"></circle>
+          <text class="growth-chart-endlabel" id="growthEndLabel"></text>
+          <g class="growth-chart-axis" id="growthAxis"></g>
+        </svg>
+        <div class="growth-chart-crosshair" id="growthCrosshair"></div>
+        <div class="growth-chart-tooltip" id="growthTooltip"></div>
+      </div>
+      <details class="growth-chart-table">
+        <summary>View year-by-year data</summary>
+        <table class="results-table">
+          <thead>
+            <tr><th>Year</th><th>Sale Total</th><th>Cumulative</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="num">2015</td><td>$0.40M (est.)</td><td>$0.40M</td></tr>
+            <tr><td class="num">2016</td><td>$0.60M (est.)</td><td>$1.00M</td></tr>
+            <tr><td class="num">2017</td><td>$0.70M (est.)</td><td>$1.70M</td></tr>
+            <tr><td class="num">2018</td><td>$0.70M (est.)</td><td>$2.40M</td></tr>
+            <tr><td class="num">2019</td><td>$1.20M (est.)</td><td>$3.60M</td></tr>
+            <tr><td class="num">2020</td><td>$1.30M</td><td>$4.90M</td></tr>
+            <tr><td class="num">2021</td><td>$2.50M</td><td>$7.40M</td></tr>
+            <tr><td class="num">2022</td><td>$2.30M</td><td>$9.70M</td></tr>
+            <tr><td class="num">2023</td><td>$2.39M</td><td>$12.09M</td></tr>
+            <tr><td class="num">2024</td><td>$2.66M</td><td>$14.75M</td></tr>
+            <tr><td class="num">2025</td><td>$2.80M (est.)</td><td>$17.55M</td></tr>
+            <tr><td class="num">2026</td><td>$3.00M (est.)</td><td>$20.55M</td></tr>
+          </tbody>
+        </table>
+      </details>
+    </div>
+
     <div class="card-grid" style="grid-template-columns:repeat(3,1fr);">
       <div>
         <p class="eyebrow">Invitation Only</p>
@@ -307,5 +352,6 @@
   </div>
 </footer>
 
+<script src="js/growth-chart.js"></script>
 </body>
 </html>
