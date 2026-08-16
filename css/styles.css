@@ -80,6 +80,12 @@ h1, h2, h3, h4 {
 p { margin: 0 0 1em; max-width: 62ch; }
 li::marker { color: var(--red); }
 
+.legal-content p { max-width: none; }
+.legal-content li { margin-bottom: 0.7em; }
+.legal-content li:last-child { margin-bottom: 0; }
+.legal-content li ul { margin-top: 0.5em; }
+.legal-content li ul li { margin-bottom: 0.5em; }
+
 .lede {
   font-size: 1.2rem;
   line-height: 1.55;
