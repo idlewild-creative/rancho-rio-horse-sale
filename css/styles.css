@@ -14,6 +14,7 @@
   --red-deep: #8f0b21;
   --rust: #7a3b2e;
   --gold: #a9822f;
+  --titos-orange: #f47b29;
   --line: rgba(245, 240, 230, 0.14);
   --line-dark: rgba(11, 11, 12, 0.14);
 
@@ -231,16 +232,15 @@ p { margin: 0 0 1em; max-width: 62ch; }
 
 /* Presenting sponsor strip */
 .sponsor-strip {
-  background: var(--ink-soft);
-  color: var(--bone-dim);
-  border-bottom: 1px solid var(--line);
+  background: var(--titos-orange);
+  color: var(--ink);
 }
 .sponsor-strip .wrap {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6em;
-  padding: 0.6em 0;
+  gap: 0.7em;
+  padding: 0.5em 0;
   font-family: var(--font-label);
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -248,7 +248,8 @@ p { margin: 0 0 1em; max-width: 62ch; }
   text-align: center;
   flex-wrap: wrap;
 }
-.sponsor-strip strong { color: var(--bone); }
+.sponsor-strip strong { color: var(--ink); }
+.sponsor-strip img { height: 22px; width: auto; flex-shrink: 0; }
 
 /* ---------- Sections ---------- */
 
