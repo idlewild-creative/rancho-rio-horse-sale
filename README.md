@@ -20,11 +20,14 @@ A bold, standalone site for The Horse Sale at Rancho Rio, pulled out of RanchoRi
 
 ## What's placeholder right now
 
-1. **Logo** — `assets/logo/placeholder-mark.svg` is a simple stand-in. Swap in your real horse sale logo (drop it in `assets/logo/` and update the `<img>` `src` in each page's header).
-2. **Photos** — Every photo slot currently shows a styled "add photo" placeholder pattern instead of a broken image icon. Once you upload your imagery, I'll drop it into `assets/images/` and wire it into the hero, high-seller cards, and lot catalog.
-3. **2026 lot catalog** — `sale-horses.html` has 3 template lot cards. Once you have the finalized 65-horse lineup, I can generate all lot cards from a simple list/spreadsheet you give me (name, sire/dam, year, color, sex, consignor, photo).
-4. **Terms & Conditions** — `terms.html` has a warranty summary but needs the full legal text from the current site.
-5. **Tito's Handmade Vodka** — homepage has a simple sponsor callout section; happy to build this out more (logo lockup, dedicated sponsor page, etc.) once you share brand assets/guidelines from Tito's.
+1. **Photos** — Some slots still show a styled "add photo" placeholder pattern. Real sale photography (`assets/images/photography/`) is wired into the homepage hero, mosaic, and two high-seller cards; the rest will fill in as more imagery comes in.
+2. **2026 lot catalog** — `sale-horses.html` has 3 template lot cards. Once you have the finalized 65-horse lineup, I can generate all lot cards from a simple list/spreadsheet you give me (name, sire/dam, year, color, sex, consignor, photo).
+3. **Terms & Conditions** — `terms.html` has a warranty summary but needs the full legal text from the current site.
+4. **Tito's Handmade Vodka** — homepage has a simple sponsor callout section; happy to build this out more (logo lockup, dedicated sponsor page, etc.) once you share brand assets/guidelines from Tito's.
+
+## Logo
+
+Real logo files live in `assets/logo/`: `TheHorseSale_RanchoRio_LOGO_1C_2023.png` (single color), `..._Black-Red_2023.png` (light backgrounds), `..._White-Red_2023.png` (dark backgrounds) — the full lockup with "THE HORSE SALE" wordmark and "Rancho Rio" script. `rancho-rio-mark.png` is a cropped version of just the red "R~" mark (works on any background since it has no black/white elements), used in the compact header/footer nav slot. The full lockups aren't used anywhere yet — good candidates for a more spacious spot if one comes up.
 
 ## Next steps (matching your usual workflow)
 
