@@ -323,14 +323,14 @@ li::marker { color: var(--red); }
 .sponsor-track {
   display: flex;
   width: max-content;
-  animation: sponsor-scroll 26s linear infinite;
+  animation: sponsor-scroll 34s linear infinite;
 }
 .sponsor-group {
   display: flex;
   align-items: center;
-  gap: 1.4em;
+  gap: 2em;
   flex-shrink: 0;
-  padding: 0.5em 1.4em;
+  padding: 0.5em 2em;
   font-family: var(--font-label);
   text-transform: uppercase;
   letter-spacing: 0.14em;
