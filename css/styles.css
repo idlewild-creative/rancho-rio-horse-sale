@@ -231,16 +231,16 @@ li::marker { color: var(--red); }
   .main-nav li.has-dropdown.dropdown-open .dropdown-menu { display: flex; }
 }
 
-/* ---------- NTR section ---------- */
+/* ---------- Sections with a faint background photo ---------- */
 
-.ntr-section {
+.section-bg-photo {
   position: relative;
   background-size: cover;
   background-position: center 30%;
   background-repeat: no-repeat;
   overflow: hidden;
 }
-.ntr-section::before {
+.section-bg-photo::before {
   content: "";
   position: absolute;
   inset: 0;
