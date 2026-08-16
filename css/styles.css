@@ -271,12 +271,12 @@ section { padding: var(--space-5) 0; }
 .stat-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line-dark);
+  border-bottom: 1px solid var(--line-dark);
 }
 .stat {
   padding: var(--space-4) var(--space-3);
-  border-right: 1px solid var(--line);
+  border-right: 1px solid var(--line-dark);
 }
 .stat:last-child { border-right: none; }
 .stat-num {
@@ -291,7 +291,7 @@ section { padding: var(--space-5) 0; }
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.85rem;
-  color: var(--bone-dim);
+  color: var(--rust);
 }
 
 @media (max-width: 800px) {
@@ -349,6 +349,7 @@ section { padding: var(--space-5) 0; }
     linear-gradient(180deg, rgba(11,11,12,0.35) 0%, rgba(11,11,12,0.55) 45%, rgba(11,11,12,0.95) 100%),
     repeating-linear-gradient(135deg, #1a1917, #1a1917 22px, #0b0b0c 22px, #0b0b0c 44px);
 }
+
 .card-body { padding: var(--space-2) var(--space-3) var(--space-3); }
 .card-body h3 { font-size: 1.3rem; margin-bottom: 0.25em; }
 .card-meta { font-family: var(--font-label); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.82rem; color: var(--rust); }
@@ -367,6 +368,30 @@ section { padding: var(--space-5) 0; }
   padding: 0.35em 2.4em;
   transform: rotate(8deg);
   box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+/* ---------- Photo mosaic (photography) ---------- */
+
+.photo-mosaic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 220px;
+  grid-auto-flow: dense;
+  gap: var(--space-2);
+}
+.photo-mosaic-item { overflow: hidden; background: var(--bone-dim); }
+.photo-mosaic-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.photo-mosaic-item:hover img { transform: scale(1.045); }
+.photo-mosaic-item.tall { grid-row: span 2; }
+
+@media (max-width: 700px) {
+  .photo-mosaic { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 180px; }
 }
 
 /* ---------- Results table ---------- */
