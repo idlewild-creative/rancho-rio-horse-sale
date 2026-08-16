@@ -72,31 +72,41 @@
     </div>
 
     <div class="growth-chart" id="growthChart">
-      <div class="growth-chart-head">
-        <div>
+      <div class="growth-chart-layout">
+        <div class="growth-chart-copy">
           <span class="growth-chart-label">Cumulative Sale Total &middot; 2015&ndash;2026</span>
           <span class="growth-chart-total" id="growthTotal">$0</span>
+          <p class="growth-chart-note">Figures for 2015&ndash;2019 and 2025&ndash;2026 are estimates pending final verification.</p>
         </div>
-        <span class="growth-chart-note">Figures for 2015&ndash;2019 and 2025&ndash;2026 are estimates pending final verification.</span>
-      </div>
-      <div class="growth-chart-svg-wrap">
-        <svg id="growthSvg" viewBox="0 0 1000 340" role="img" aria-label="Line chart showing the cumulative sale total climbing from 2015 to 2026">
-          <g class="growth-chart-grid" id="growthGrid"></g>
-          <path class="growth-chart-area" id="growthArea"></path>
-          <path class="growth-chart-line" id="growthLine"></path>
-          <circle class="growth-chart-dot" id="growthDot" r="5"></circle>
-          <text class="growth-chart-endlabel" id="growthEndLabel"></text>
-          <g class="growth-chart-axis" id="growthAxis"></g>
-        </svg>
-        <div class="growth-chart-crosshair" id="growthCrosshair"></div>
-        <div class="growth-chart-tooltip" id="growthTooltip"></div>
+        <div class="growth-chart-svg-wrap">
+          <svg id="growthSvg" viewBox="0 0 1000 340" role="img" aria-label="Line chart showing the cumulative sale total climbing from 2015 to 2026">
+            <g class="growth-chart-grid" id="growthGrid"></g>
+            <path class="growth-chart-area" id="growthArea"></path>
+            <path class="growth-chart-line" id="growthLine"></path>
+            <circle class="growth-chart-dot" id="growthDot" r="5"></circle>
+            <text class="growth-chart-endlabel" id="growthEndLabel"></text>
+            <g class="growth-chart-axis" id="growthAxis"></g>
+          </svg>
+          <div class="growth-chart-crosshair" id="growthCrosshair"></div>
+          <div class="growth-chart-tooltip" id="growthTooltip"></div>
+        </div>
       </div>
     </div>
+  </div>
+</section>
 
+<section class="section-dark">
+  <div class="wrap text-center">
+    <h2 style="font-size:clamp(2.4rem, 6vw, 5rem); max-width:22ch; margin:0 auto;">Celebrating the <em style="font-style:normal; color:var(--red);">Rope Horse</em> &amp; the People Who Make Them.</h2>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <div class="card-grid" style="grid-template-columns:repeat(3,1fr); align-items:start;">
       <div class="card">
         <div class="card-media">
-          <img src="assets/images/photography/sale-photo_invitation-only-horse.jpg" alt="A bridled sale horse at The Horse Sale at Rancho Rio">
+          <img src="assets/images/photography/sale-photo_invitation-only-horse.jpg" alt="A bridled sale horse at The Horse Sale at Rancho Rio" style="object-position:78% 35%;">
         </div>
         <div class="card-body">
           <p class="eyebrow">Invitation Only</p>
@@ -113,7 +123,7 @@
       </div></div>
       <div class="card">
         <div class="card-media">
-          <img src="assets/images/photography/sale-photo_social-event-kid-rope.jpg" alt="A young ropester in a cowboy hat and bow tie at The Horse Sale at Rancho Rio">
+          <img src="assets/images/photography/sale-photo_social-event-kid-rope.jpg" alt="A young ropester in a cowboy hat and bow tie at The Horse Sale at Rancho Rio" style="object-position:25% 20%;">
         </div>
         <div class="card-body">
           <p class="eyebrow">The Social Event of the Season</p>
@@ -121,12 +131,6 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="section-dark">
-  <div class="wrap text-center">
-    <h2 style="font-size:clamp(2.4rem, 6vw, 5rem); max-width:22ch; margin:0 auto;">Celebrating the <em style="font-style:normal; color:var(--red);">Rope Horse</em> &amp; the People Who Make Them.</h2>
   </div>
 </section>
 

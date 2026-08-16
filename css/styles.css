@@ -446,14 +446,13 @@ section { padding: var(--space-5) 0; }
 /* ---------- Growth chart (cumulative sale total) ---------- */
 
 .growth-chart { margin: var(--space-4) 0 var(--space-3); }
-.growth-chart-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-  margin-bottom: var(--space-3);
+.growth-chart-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: var(--space-5);
+  align-items: center;
 }
+.growth-chart-copy { display: flex; flex-direction: column; }
 .growth-chart-label {
   font-family: var(--font-label);
   text-transform: uppercase;
@@ -461,12 +460,12 @@ section { padding: var(--space-5) 0; }
   font-size: 0.85rem;
   color: var(--rust);
   display: block;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.15em;
 }
 .growth-chart-total {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-size: clamp(3.4rem, 7vw, 6rem);
   color: var(--red);
   line-height: 1;
 }
@@ -475,10 +474,14 @@ section { padding: var(--space-5) 0; }
   font-size: 0.75rem;
   letter-spacing: 0.04em;
   color: rgba(11, 11, 12, 0.45);
-  max-width: 26ch;
-  text-align: right;
+  max-width: 32ch;
+  margin: 0.8em 0 0;
 }
 .growth-chart-svg-wrap { position: relative; }
+
+@media (max-width: 800px) {
+  .growth-chart-layout { grid-template-columns: 1fr; gap: var(--space-3); }
+}
 .growth-chart-svg-wrap svg { display: block; width: 100%; height: auto; overflow: visible; }
 .growth-chart-grid { stroke: var(--line-dark); stroke-width: 1; }
 .growth-chart-area { fill: rgba(200, 16, 46, 0.1); transform-origin: bottom; transform: scaleY(0); transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1); }
@@ -554,10 +557,6 @@ section { padding: var(--space-5) 0; }
 }
 .growth-chart-table table { margin-top: var(--space-2); }
 
-@media (max-width: 700px) {
-  .growth-chart-head { flex-direction: column; align-items: flex-start; }
-  .growth-chart-note { text-align: left; }
-}
 
 /* ---------- Results table ---------- */
 
