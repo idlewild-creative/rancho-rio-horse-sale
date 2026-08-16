@@ -338,7 +338,7 @@ li::marker { color: var(--red); }
   white-space: nowrap;
 }
 .sponsor-group strong { color: var(--ink); }
-.sponsor-group img { height: 30px; width: auto; flex-shrink: 0; vertical-align: middle; }
+.sponsor-logo { height: 46px; width: auto; flex-shrink: 0; }
 .sponsor-star { font-size: 0.7em; opacity: 0.6; }
 
 @keyframes sponsor-scroll {
