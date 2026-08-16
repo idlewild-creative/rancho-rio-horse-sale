@@ -322,6 +322,14 @@ section { padding: var(--space-5) 0; }
   gap: var(--space-3);
 }
 
+/* Several pages set a fixed column count inline (e.g. repeat(3,1fr))
+   for desktop layout; force a single column on small screens
+   regardless, since a hardcoded inline column count otherwise beats
+   the auto-fill default above and never stacks. */
+@media (max-width: 700px) {
+  .card-grid { grid-template-columns: 1fr !important; }
+}
+
 .card {
   background: #fff;
   border: 1px solid var(--line-dark);
