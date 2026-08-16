@@ -231,6 +231,23 @@ li::marker { color: var(--red); }
   .main-nav li.has-dropdown.dropdown-open .dropdown-menu { display: flex; }
 }
 
+/* ---------- NTR section ---------- */
+
+.ntr-section {
+  position: relative;
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.ntr-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--bone);
+  opacity: 0.9;
+}
+
 /* ---------- Hero ---------- */
 
 .hero {
