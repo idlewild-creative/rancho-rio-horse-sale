@@ -13,8 +13,8 @@
     { year: 2022, annual: 2.30, est: false },
     { year: 2023, annual: 2.39, est: false },
     { year: 2024, annual: 2.66, est: false },
-    { year: 2025, annual: 2.80, est: true },
-    { year: 2026, annual: 3.00, est: true }
+    { year: 2025, annual: 2.95, est: false },
+    { year: 2026, annual: 2.77, est: false }
   ];
 
   var cum = 0;
