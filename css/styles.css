@@ -529,7 +529,7 @@ section { padding: var(--space-5) 0; }
 .sliding-gallery:hover .sliding-gallery-track { animation-play-state: paused; }
 .sliding-gallery-item {
   flex: 0 0 auto;
-  width: min(460px, 80vw);
+  width: min(600px, 88vw);
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: var(--bone-dim);
