@@ -524,12 +524,12 @@ section { padding: var(--space-5) 0; }
   display: flex;
   gap: var(--space-2);
   width: max-content;
-  animation: sliding-gallery-scroll 140s linear infinite;
+  animation: sliding-gallery-scroll 85s linear infinite;
 }
 .sliding-gallery:hover .sliding-gallery-track { animation-play-state: paused; }
 .sliding-gallery-item {
   flex: 0 0 auto;
-  width: min(360px, 68vw);
+  width: min(460px, 80vw);
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: var(--bone-dim);
