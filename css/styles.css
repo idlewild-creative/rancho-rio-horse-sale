@@ -134,7 +134,7 @@ li::marker { color: var(--red); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 84px;
+  min-height: 84px;
 }
 
 .brand {
@@ -199,6 +199,15 @@ li::marker { color: var(--red); }
     font-size: 0.8rem;
     cursor: pointer;
   }
+
+  .main-nav .btn {
+    padding: 0.6em 0.9em;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+
+  .sale-staff-columns { columns: 1 !important; }
 
   .main-nav.nav-open ul {
     display: flex;
