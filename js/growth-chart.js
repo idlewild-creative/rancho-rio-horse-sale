@@ -3,11 +3,11 @@
   if (!chart) return;
 
   var data = [
-    { year: 2015, annual: 0.40, est: true },
-    { year: 2016, annual: 0.60, est: true },
-    { year: 2017, annual: 0.70, est: true },
-    { year: 2018, annual: 0.70, est: true },
-    { year: 2019, annual: 1.20, est: true },
+    { year: 2015, annual: 0.3207, est: false },
+    { year: 2016, annual: 0.5102, est: false },
+    { year: 2017, annual: 0.5001, est: false },
+    { year: 2018, annual: 0.6536, est: false },
+    { year: 2019, annual: 0.7925, est: false },
     { year: 2020, annual: 1.30, est: false },
     { year: 2021, annual: 2.50, est: false },
     { year: 2022, annual: 2.30, est: false },
